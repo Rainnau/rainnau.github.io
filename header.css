@@ -72,7 +72,4 @@ header {
     display: flex;
     flex-direction: column;
     grid-area: content;
-
-    height: 1500px;
-
 }

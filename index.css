@@ -1,3 +1,18 @@
+.center-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.center-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
 #motto {
     display: flex;
     flex-direction: column;
@@ -22,13 +37,12 @@
     flex-direction: column;
 
     align-items: center;
-    /* justify-content: center; */
 
     background-color: beige;
 
 
     width: 100vw;
-    height: 50vh;
+    height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -36,19 +50,117 @@
     color: #1e4269;
 }
 
-.note {
+
+.bestSellerItem {
+    width: 200px;
+    height: 400px;
+    
     margin-top: 25px;
-    font: 500 1rem 'Oxygen', serif;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    margin-left: 25px;
+    margin-right: 25px;
+
+    border-radius: 25px;
+    background-color: white;
+    color: #1f102a;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+
 }
 
-.browseButton {
-    padding: 15px;
+#featuredProducts {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: white;
+
+    width: 100vw;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    font: 3rem 'Oxygen', serif;
+    color: #1f102a;
+}
+
+
+.featuredItem {
+    width: 300px;
+    height: 600px;
+    
     margin-top: 25px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    margin-left: 25px;
+    margin-right: 25px;
+
+    border-radius: 25px;
+    background-color: beige;
+    color: #1e4269;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+
+}
+
+#otherProducts {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: beige;
+
+
+    width: 100vw;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    font: 3rem 'Oxygen', serif;
+    color: #1e4269;
+}
+
+.itemImg {
+    margin-top: 25px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.small-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font: 500 1rem 'Oxygen', serif;
+    text-align: center;
+}
+
+.addToCartButton {
+    padding: 15px;
 
     border-radius: 25px;
     border: 5px solid #1f102a;
     
-    /* background-color: #1f102a; */
+    color: #1f102a;
+    font-size: 1rem;
+}
+
+.addToCartButton:hover {
+    background-color: #1f102a;
+    color: beige;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer
+}
+
+.browseButton {
+    padding: 15px;
+
+    border-radius: 25px;
+    border: 5px solid #1f102a;
+    
     color: #1f102a;
     font-size: 1rem;
 }
@@ -56,7 +168,7 @@
 .browseButton:hover {
     background-color: #1f102a;
     color: beige;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 
 }
 
