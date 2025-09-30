@@ -5,22 +5,31 @@
 }
 
 body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
     background-color: beige;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
+#headerDiv {
+    grid-area: header;
+    z-index: 10;
+}
+
 header {
     background-color: rgba(9, 1, 41, 0.842);
-    backdrop-filter: blur(50px);
 
     display: flex;
     position: fixed;
-    grid-area: header;
 
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
+    height: 8vh;
 
     font: 500 1rem 'Oxygen', serif;
 }
@@ -59,7 +68,11 @@ header {
 }
 
 #content {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+
+    height: 1500px;
+
 }
