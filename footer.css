@@ -1,0 +1,32 @@
+.center-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.small-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font: 500 1rem 'Oxygen', serif;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgb(9, 1, 41);
+
+    width: 100vw;
+    height: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    font: 3rem 'Oxygen', serif;
+    color: white;
+}
